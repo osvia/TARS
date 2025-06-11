@@ -84,13 +84,13 @@
         <p class="text-sm text-gray-500 mt-3">
           <a href="https://acm.uni-wuppertal.de/en/team/details/heinert/"
             class="text-blue-600 hover:underline" target="_blank"
-            rel="noopener noreferrer">Edgar Heinert</a><sup>1</sup> •
+            rel="noopener noreferrer">Edgar Heinert</a><sup>1,2</sup> •
           <a href="https://acm.uni-wuppertal.de/en/team/details/gottwald/"
             class="text-blue-600 hover:underline" target="_blank"
-            rel="noopener noreferrer">Thomas Gottwald</a><sup>1</sup> •
+            rel="noopener noreferrer">Thomas Gottwald</a><sup>1,2</sup> •
           <a href="https://acm.uni-wuppertal.de/en/team/details/muetze/"
             class="text-blue-600 hover:underline" target="_blank"
-            rel="noopener noreferrer">Annika Mütze</a><sup>1</sup> •
+            rel="noopener noreferrer">Annika Mütze</a><sup>1,2</sup> •
           <a href="https://acm.uni-wuppertal.de/en/team/details/rottmann/"
             class="text-blue-600 hover:underline" target="_blank"
             rel="noopener noreferrer">Matthias Rottmann</a><sup>1</sup>
@@ -99,6 +99,8 @@
         <!-- AFFILIATION FOOTNOTE -->
         <p class="text-xs text-gray-500 mt-1">
           <sup>1</sup> Department&nbsp;of&nbsp;Mathematics, University&nbsp;of&nbsp;Wuppertal, Wuppertal, Germany
+          <br>
+          <sup>2</sup> Equal contribution
         </p>
 
         <!-- LOGO STRIP -->
@@ -195,10 +197,7 @@
       <section id="method" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8 lg:max-w-6xl lg:mx-auto">
         <h2 class="text-2xl font-semibold">Method Overview</h2>
         <p>
-          Our pipeline first applies <em>Edge‑Enhancing Diffusion</em>: The PDE-based diffusion method propagates color values along edges but not across them and thus removes texture from images while preserving their shape. The resulting shape cue keeps category‑defining contours.
-          Next, we compute a <em>Voronoi texture abstraction</em> on the original image, which discards shape but preserves local texture statistics. A number of Voronoi cells are sampled and each displays a randomly chosen part of the original image.
-          The CDSB and CDR proposals are then chosen from a number of candidate metrics which included both additional cue-decomposition approaches as well as a number of AI-free cue-conflict-metric candidates and are compared to the established shape bias metric by Geirhos et al.<br><br>
-          By evaluating models on shape‑only (<span class="font-mono">x<sub>S</sub></span>) and texture‑only (<span class="font-mono">x<sub>T</sub></span>) inputs, we can decompose the prediction confidence into distinct cues.
+          Our pipeline decomposes images into distinct shape and texture cues: We first apply a PDE-based diffusion method that propagates color values along edges but not across them, effectively removing texture while preserving image contours. To isolate texture, we then compute a Voronoi texture abstraction on the original image, which discards shape information while retaining local texture statistics. A set of Voronoi cells is sampled, each displaying a randomly selected region from the original image. Finally, we aggregate prediction quality measures on the shape- and texture-based dataset variants into the proposed Cue Decomposition Shape Bias (CDSB) and Cue Decomposition Robustness (CDR) metrics.
         </p>
         <div class="grid md:grid-cols-3 gap-x-6 gap-y-8">
           <!-- Column 1: EED Cues -->
@@ -283,10 +282,7 @@
               Segmentation Shape‑Bias&nbsp;&amp;&nbsp;Robustness
               </h3>
               <p class="text-sm leading-relaxed">
-              • <strong>[MODEL NAME]</strong> shows the strongest [...] (XXX)—
-              <em>XXX pp higher</em> than [architecture name]‑based <strong>[MODEL NAME]</strong>.<br>
-              • Robustness score&nbsp;ρ = 0.XXX predicts mIoU drops on Cityscapes‑C.<br>
-              • ...
+              SETR with a ViT-L backbone and MLA decoder demonstrates the strongest shape bias, while Mask2Former with a Swin-B backbone exhibits the highest robustness. This indicates Mask2Former’s strong ability to extract information from both texture and shape cues. Overall, Vision Transformers tend to be both more shape-biased and more robust than CNNs.
               </p>
           </div>
       
@@ -308,12 +304,7 @@
                       Classification Shape-Bias&nbsp;&amp;&nbsp;Robustness
                   </h3>
                   <p class="text-sm leading-relaxed">
-                      • CNNs (e.g.&nbsp;[MODEL NAME]) remain texture-leaning
-                      (shape-bias &lt; 0.XXX); <strong>[MODEL NAME]</strong> reaches 0.XXX
-                      after fine-tuning.<br>
-                      • Our robustness metric correlates with [MODEL NAME] drops at r = 0.XXX—
-                      better than mCE.<br>
-                      •...
+                      The vision-language model (VLM) FLAVA-Full exhibits the strongest cue-decomposition shape bias. In general, VLMs with transformer backbones show the highest shape bias, while standard vision transformers still outperform all convolutional neural networks. Regarding cue decomposition robustness, the transformer model EVA02-L shows exceptional ability to extract information from both shape and texture. However, the CNNs ConvNeXt-L and RegNetY outperform all transformer models and VLMs in this aspect.
                   </p>
               </div>
 
@@ -486,6 +477,7 @@
       <section id="acks" class="space-y-6 px-6 py-8 lg:max-w-6xl lg:mx-auto">
         <h2 class="text-2xl font-semibold">Acknowledgments</h2>
         <p>A.M., M.R. and E.H. acknowledge support by the German Federal Ministry of Education and Research within the junior research group project “UnrEAL” (grant no. 01IS22069).</p>
+        <p>T.G. acknowledges support by the European Union and the State NRW within the EFRE/JTF project "Just scan it 3D" (grand no. EFRE-20800529).</p>
         <div class="mt-4 w-40 flex flex-col items-center">
           <a href="https://acm.uni-wuppertal.de/en/ai/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab Logo" loading="lazy" class="w-full h-auto">
