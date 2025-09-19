@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shape Bias & Robustness – Project Page</title>
+  <title>TARS – Project Page</title>
   <link rel="icon" type="image/png" href="./assets/images/KeyVisual_Dark.png" />
   <!-- Tailwind (via CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -18,11 +18,7 @@
     <div class="px-4 pb-5 text-sm space-y-6 leading-relaxed">
       <nav class="space-y-1">
         <a href="#abstract"   class="block hover:underline text-gray-700">Abstract</a>
-        <a href="#method"     class="block hover:underline text-gray-700">Method</a>
-        <a href="#metrics"    class="block hover:underline text-gray-700">Metrics</a>
-        <a href="#results"    class="block hover:underline text-gray-700">Qualitative Results</a>
         <a href="#resources"  class="block hover:underline text-gray-700">Resources</a>
-        <!--<a href="#faq"        class="block hover:underline text-gray-700">FAQ</a>-->
         <a href="#acks"       class="block hover:underline text-gray-700">Acknowledgments</a>
         <a href="#citation"   class="block hover:underline text-gray-700">Citation</a>
         <a href="#contact"    class="block hover:underline text-gray-700">Contact</a>
@@ -32,9 +28,8 @@
       <div>
         <h3 class="font-semibold mb-1">Paper Links</h3>
         <ul class="list-disc list-inside space-y-1">
-          <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
-          <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv page</a></li>
-          <li><a href="#" class="text-blue-600 hover:underline">GitHub Code (TBA)</a></li>
+          <li><a href="https://arxiv.org/pdf/2503.10210" class="text-blue-600 hover:underline">PDF (8.9 MB)</a></li>
+          <li><a href="https://arxiv.org/abs/2503.10210" class="text-blue-600 hover:underline">arXiv page</a></li>
         </ul>
       </div>
     </div>
@@ -48,11 +43,6 @@
       <h2 class="text-xl font-bold mb-4">Navigation</h2>
       <nav class="space-y-2 mb-6 text-sm leading-relaxed">
         <a href="#abstract"   class="block hover:underline text-gray-700">Abstract</a>
-        <a href="#method"     class="block hover:underline text-gray-700">Method</a>
-        <a href="#metrics"    class="block hover:underline text-gray-700">Metrics</a>
-        <a href="#results"    class="block hover:underline text-gray-700">Qualitative Results</a>
-        <a href="#resources"  class="block hover:underline text-gray-700">Resources</a>
-        <!--<a href="#faq"        class="block hover:underline text-gray-700">FAQ</a>-->
         <a href="#acks"       class="block hover:underline text-gray-700">Acknowledgments</a>
         <a href="#citation"   class="block hover:underline text-gray-700">Citation</a>
         <a href="#contact"    class="block hover:underline text-gray-700">Contact</a>
@@ -61,9 +51,8 @@
       <hr class="my-6">
       <h3 class="font-semibold mb-2 text-sm">Paper Links</h3>
       <ul class="list-disc list-inside space-y-1 text-sm leading-relaxed mb-6">
-        <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
-        <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv page</a></li>
-        <li><a href="#" class="text-blue-600 hover:underline">GitHub Code (TBA)</a></li>
+        <li><a href="https://arxiv.org/pdf/2503.10210" class="text-blue-600 hover:underline">PDF (8.9 MB)</a></li>
+        <li><a href="https://arxiv.org/abs/2503.10210" class="text-blue-600 hover:underline">arXiv page</a></li>
       </ul>
       <hr class="my-6">
     </aside>
@@ -74,21 +63,20 @@
       <!-- HERO -->
       <header class="text-center mb-12">
         <h1 class="text-4xl font-extrabold leading-tight">
-          Shape Bias &amp; Robustness Evaluation <br>
-          via Cue Decomposition for Image Classification and Segmentation
+          TARS: Traffic-Aware Radar Scene Flow Estimation
         </h1>
 
         <!-- AUTHORS -->
         <p class="text-sm text-gray-500 mt-3">
-          <a href="https://acm.uni-wuppertal.de/en/team/details/heinert/"
+          <a href="https://acm.uni-wuppertal.de/en/team/details/wu/"
             class="text-blue-600 hover:underline" target="_blank"
-            rel="noopener noreferrer">Edgar Heinert</a><sup>1,2</sup> •
-          <a href="https://acm.uni-wuppertal.de/en/team/details/gottwald/"
+            rel="noopener noreferrer">Jialong Wu</a><sup>1,2</sup> •
+          <a href="#"
             class="text-blue-600 hover:underline" target="_blank"
-            rel="noopener noreferrer">Thomas Gottwald</a><sup>1,2</sup> •
-          <a href="https://acm.uni-wuppertal.de/en/team/details/muetze/"
+            rel="noopener noreferrer">Marco Braun</a><sup>2</sup> •
+          <a href="#"
             class="text-blue-600 hover:underline" target="_blank"
-            rel="noopener noreferrer">Annika Mütze</a><sup>1,2</sup> •
+            rel="noopener noreferrer">Dominic Spata</a><sup>2</sup> •
           <a href="https://acm.uni-wuppertal.de/en/team/details/rottmann/"
             class="text-blue-600 hover:underline" target="_blank"
             rel="noopener noreferrer">Matthias Rottmann</a><sup>1</sup>
@@ -98,7 +86,12 @@
         <p class="text-xs text-gray-500 mt-1">
           <sup>1</sup> Department&nbsp;of&nbsp;Mathematics, University&nbsp;of&nbsp;Wuppertal, Wuppertal, Germany
           <br>
-          <sup>2</sup> Equal contribution
+          <sup>2</sup> Aptiv Services Deutschland GmbH
+        </p>
+
+        <!-- Publication FOOTNOTE -->
+        <p class="text-xs text-gray-500 mt-1">
+          IEEE/CVF International Conference on Computer Vision (ICCV), 2025
         </p>
 
         <!-- LOGO STRIP -->
@@ -113,15 +106,19 @@
             <img src="./assets/images/BUW_Logo.jpg" alt="University of Wuppertal Logo" class="h-full w-auto" loading="lazy">
           </a>
 
+          <!-- APTIV -->
+          <a href="https://www.aptiv.com/" target="_blank" rel="noopener noreferrer" class="block h-10">
+            <img src="./assets/images/aptiv_logo_color_rgb.png" alt="APTIV" class="h-full w-auto" loading="lazy">
+          </a>
+
           <!-- Add additional logos here (duplicate & adapt) -->
         </div>
-
       
         <!-- ACTION BUTTONS -->
         <div class="flex flex-wrap justify-center gap-3 mt-6">
 
           <!-- Paper / Document icon -->
-          <a href="https://arxiv.org/abs/2503.12453"
+          <a href="https://arxiv.org/abs/2503.10210"
             class="inline-flex items-center px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
             <!-- Heroicons outline: DocumentText -->
             <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -135,38 +132,13 @@
             </svg>
             arXiv Page
           </a>
-
-          <!-- GitHub -->
-          <a href="#"
-            class="inline-flex items-center px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
-            <!-- GitHub Octicon: mark-github -->
-            <svg class="w-5 h-5 mr-2" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd"
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-                      0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-                      -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
-                      .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
-                      -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27
-                      .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
-                      .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
-                      0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-              </path>
-            </svg>
-            GitHub Code (TBA)
-          </a>
         </div>
 
 
-        <!-- Title Images Row (unchanged) -->
-        <div class="flex flex-wrap justify-center gap-2 mt-6">
-          <img src="./assets/images/title_image_1.jpg"  alt="Title image 1"
-              class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
-          <img src="./assets/images/title_image_2.jpg"  alt="Title image 2"
-              class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
-          <img src="./assets/images/title_image_3.jpg"    alt="Title image 3"
-              class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
-          <img src="./assets/images/title_image_4.png"    alt="Title image 4"
-              class="h-32 w-auto max-w-[45%] md:max-w-none rounded-lg shadow-sm">
+        <!-- Title Images Row -->
+        <div class="flex justify-center mt-6">
+          <img src="./assets/images/intro.png"  alt="Title image 1"
+              class="h-40 md:h-96 w-auto rounded-lg shadow-sm">
         </div>
       </header>
       <!-- /HERO -->
@@ -176,306 +148,30 @@
       <section id="abstract" class="space-y-4 lg:max-w-6xl  lg:mx-auto">
         <h2 class="text-2xl font-semibold">Abstract</h2>
         <p>
-          We propose a two-step cue decomposition pipeline that separates images into their <strong>shape cues</strong> using Edge-Enhancing Diffusion and their <strong>texture cues</strong> using Voronoi patch shuffling, <strong>enabling measurement of model reliance on either cue</strong>. Building on this, we introduce:
-        </p>
-        <ul class="list-inside list-disc space-y-1">
-          <li>a <strong>unified Cue-Decomposition Shape Bias (CDSB) metric</strong> applicable to both <strong>image classification</strong> and, for the first time, <strong>semantic segmentation models</strong>, and</li>
-          <li>a <strong>Cue-Decomposition Robustness (CDR) metric</strong> assessing model performance in the <strong>absence of shape or texture cues.</strong></li>
-        </ul>
-        <p>
-          Using these AI-free, handpicking-free metrics, we conduct:
-          <ul class="list-inside list-disc space-y-1">
-            <li>the <strong>first CDSB and CDR evalutaiton</strong> of 43 pre-trained image classification models, and</li>
-            <li>the <strong>first shape bias and CDR evaluation</strong> of 23 pre-trained semantic segmentation models.</li>
-          </ul>
+          Scene flow provides crucial motion information for autonomous driving. Recent LiDAR scene flow models utilize the rigid-motion assumption at the instance level, assuming objects are rigid bodies. However, these instance-level methods are not suitable for sparse radar point clouds. In this work, we present a novel Traffic-Aware Radar Scene flow estimation method, named TARS, which utilizes the motion rigidity at the traffic level. To address the challenges in radar scene flow, we perform object detection and scene flow jointly and boost the latter. We incorporate the feature map from the object detector, trained with detection losses, to make radar scene flow aware of the environment and road users. Therefrom, we construct a Traffic Vector Field (TVF) in the feature space, enabling a holistic traffic-level scene understanding in our scene flow branch. When estimating the scene flow, we consider both point-level motion cues from point neighbors and traffic-level consistency of rigid motion within the space. TARS outperforms the state of the art on a proprietary dataset and the View-of-Delft dataset, improving the benchmarks by 23% and 15%, respectively.
         </p>
       </section>
 
-      <!-- METHOD OVERVIEW -->
-      <section id="method" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8 lg:max-w-6xl lg:mx-auto">
-        <h2 class="text-2xl font-semibold">Method Overview</h2>
-        <p>
-          Our pipeline decomposes images into distinct shape and texture cues: We first apply a PDE-based diffusion method that propagates color values along edges but not across them, effectively removing texture while preserving image contours. To isolate texture, we then compute a Voronoi texture abstraction on the original image, which discards shape information while retaining local texture statistics. A set of Voronoi cells is sampled, each displaying a randomly selected region from the original image. Finally, we aggregate prediction quality measures on the shape- and texture-based dataset variants into the proposed Cue Decomposition Shape Bias (CDSB) and Cue Decomposition Robustness (CDR) metrics.
-        </p>
-        <div class="grid md:grid-cols-3 gap-x-6 gap-y-8">
-          <!-- Column 1: EED Cues -->
-          <div class="space-y-3">
-            <h3 class="text-xl font-semibold mb-3 text-center">EED Cues</h3>
-            <div class="grid grid-cols-2 gap-3">
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/EED/EEDOriginal01.jpg" alt="EED Cue Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/EED/EED01.jpg" alt="EED Cue Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/EED/EEDOriginal02.jpg" alt="EED Cue Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/EED/EED02.jpg" alt="EED Cue Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-            </div>
-          </div>
 
-          <!-- Column 2: Voronoi Cues -->
-          <div class="space-y-3">
-            <h3 class="text-xl font-semibold mb-3 text-center">Voronoi Cues</h3>
-            <div class="grid grid-cols-2 gap-3">
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/Voronoi/voronoi_frame_1.png" alt="Voronoi Cue Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/Voronoi/voronoi_frame_2.png" alt="Voronoi Cue Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/Voronoi/voronoi_shuffle_02.png" alt="Voronoi Cue Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/Voronoi/voronoi_shuffle_06.png" alt="Voronoi Cue Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-            </div>
-          </div>
-
-          <!-- Column 3: Cue Conflict Examples -->
-          <div class="space-y-3">
-            <h3 class="text-xl font-semibold mb-3 text-center">Cue Conflict</h3>
-            <div class="grid grid-cols-2 gap-3">
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/CueConflict/CueConfl01.jpg" alt="Cue Conflict Example 1" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/CueConflict/CueConfl02.jpg" alt="Cue Conflict Example 2" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/CueConflict/CueConfl03.jpg" alt="Cue Conflict Example 3" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-              <figure class="rounded-lg overflow-hidden shadow-sm">
-                <img src="./assets/images/CueConflict/CueConfl04.jpg" alt="Cue Conflict Example 4" loading="lazy" class="w-full h-auto object-cover aspect-square">
-              </figure>
-            </div>
-          </div>
+      <!-- Images Row -->
+        <div class="flex justify-center mt-6">
+          <img src="./assets/images/archi.png"  alt="Title image 1"
+              class="h-40 md:h-96 w-auto rounded-lg shadow-sm">
         </div>
-      </section>
-
-      <!-- METRICS (segmentation + classification) -->
-      <style>
-          /* keep your existing chart‑object / chart‑image swap */
-          .chart-object { display: block; }
-          .chart-image  { display: none; }
-      
-          @media (max-width: 1000px) {
-          .chart-object { display: none; }
-          .chart-image  { display: block; }
-          }
-      </style>
-      
-      <section id="metrics" class="space-y-6 rounded-xl px-6 py-8 lg:max-w-6xl lg:mx-auto">
-          <h2 class="text-2xl font-semibold">Metrics at a Glance</h2>
-          <!-- ── Segmentation ───────────────────────────────────── -->
-          <div
-          class="flex flex-col min-[1360px]:flex-row min-[1360px]:items-start min-[1360px]:gap-8">
-          <!-- Explanatory text -->
-          <div class="space-y-3 mb-4 min-[1360px]:mb-0 min-[1360px]:w-1/3">
-              <h3 class="font-semibold text-lg">
-              Segmentation Shape‑Bias&nbsp;&amp;&nbsp;Robustness
-              </h3>
-              <p class="text-sm leading-relaxed">
-              SETR with a ViT-L backbone and MLA decoder demonstrates the strongest shape bias, while Mask2Former with a Swin-B backbone exhibits the highest robustness. This indicates Mask2Former’s strong ability to extract information from both texture and shape cues. Overall, Vision Transformers tend to be both more shape-biased and more robust than CNNs.
-              </p>
-          </div>
-      
-          <!-- Chart -->
-          <div class="flex-1 overflow-x-auto">
-              <object type="text/html" data="./assets/charts/semseg_selected_cue_decom_metrics.html" aria-label="Segmentation metrics table" class="chart-object w-full min-h-[350px]" ></object>
-      
-              <img src="./assets/images/segmentation_metrics_table.png" alt="Segmentation metrics summary" class="chart-image w-full border rounded-md" />
-          </div>
-          </div>
-      
-        <!-- ── Classification ─────────────────────────────────── -->
-          <div
-              class="flex flex-col min-[1360px]:flex-row min-[1360px]:items-start min-[1360px]:gap-8">
-              <!-- Explanatory text -->
-              <div
-                  class="space-y-3 mb-4 min-[1360px]:mb-0 min-[1360px]:w-1/3">
-                  <h3 class="font-semibold text-lg">
-                      Classification Shape-Bias&nbsp;&amp;&nbsp;Robustness
-                  </h3>
-                  <p class="text-sm leading-relaxed">
-                      The vision-language model (VLM) FLAVA-Full exhibits the strongest cue-decomposition shape bias. In general, VLMs with transformer backbones show the highest shape bias, while standard vision transformers still outperform all convolutional neural networks. Regarding cue decomposition robustness, the transformer model EVA02-L shows exceptional ability to extract information from both shape and texture. However, the CNNs ConvNeXt-L and RegNetY outperform all transformer models and VLMs in this aspect.
-                  </p>
-              </div>
-
-              <!-- Chart -->
-              <div class="flex-1 overflow-x-auto">
-                  <object type="text/html" data="./assets/charts/classification_cue_decom_metrics.html" aria-label="Classification metrics table" class="chart-object w-full min-h-[650px]"></object>
-                  <img src="./assets/images/classification_metrics_table.png" alt="Classification metrics summary" class="chart-image w-full border rounded-md"/>
-              </div>
-          </div>
-
-      </section>
-  
-  
-
-      <!-- QUALITATIVE RESULTS – Interactive Panel -->
-      <section id="results" class="space-y-6 bg-gray-100 rounded-xl px-6 py-8 lg:max-w-6xl lg:mx-auto">
-        <h2 class="text-2xl font-semibold text-center md:text-left">Qualitative Results</h2>
-        <p class="text-sm mb-4 text-center md:text-left">
-          Compare how each model handles <em>shape‑only</em>, <em>texture‑only</em>, and <em>original</em> inputs. Use the buttons to switch between models.
-        </p>
-
-        <!-- ── IMAGE GRID ───────────────────────────────────────── -->
-        <div class="grid grid-cols-3 gap-3 md:gap-6 place-items-center">
-
-          <!-- ── ROW 1 — Segmentation GTs ── -->
-          <figure class="text-center">
-            <img src="./assets/images/example1/gt_original.png" id="gt-orig" alt="Segmentation GT – original" class="rounded-lg shadow-sm max-h-56 object-contain">
-            <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– Original</figcaption>
-          </figure>
-
-          <figure class="text-center">
-            <img src="./assets/images/example1/gt_eed.png" id="gt-eed" alt="Segmentation GT – EED" class="rounded-lg shadow-sm max-h-56 object-contain">
-            <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– EED</figcaption>
-          </figure>
-
-          <figure class="text-center">
-            <img src="./assets/images/example1/gt_vor.png" id="gt-vor" alt="Segmentation GT – Voronoi" class="rounded-lg shadow-sm max-h-56 object-contain">
-            <figcaption class="mt-1 text-xs text-gray-600">GT&nbsp;– Voronoi</figcaption>
-          </figure>
-
-          <!-- ── ROW 2 — Input Images ── -->
-          <figure class="text-center">
-            <img src="./assets/images/example1/img_original.png" id="img-orig" alt="Street scene – original" class="rounded-lg shadow-sm max-h-56 object-contain">
-            <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– Original</figcaption>
-          </figure>
-
-          <figure class="text-center">
-            <img src="./assets/images/example1/img_eed.png" id="img-eed" alt="Street scene – EED" class="rounded-lg shadow-sm max-h-56 object-contain">
-            <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– EED</figcaption>
-          </figure>
-
-          <figure class="text-center">
-            <img src="./assets/images/example1/img_vor.png" id="img-vor" alt="Street scene – Voronoi" class="rounded-lg shadow-sm max-h-56 object-contain">
-            <figcaption class="mt-1 text-xs text-gray-600">Input&nbsp;– Voronoi</figcaption>
-          </figure>
-
-          <!-- ── ROW 3 — Model Predictions (switchable) ── -->
-          <figure class="text-center">
-            <img src="./assets/images/example1/dv3_r50_original.png" id="pred-orig" alt="Model prediction – original" class="rounded-lg shadow-md max-h-56 object-contain">
-            <figcaption class="mt-1 text-xs text-gray-600" id="pred-orig-caption">DV3+R50</figcaption>
-          </figure>
-
-          <figure class="text-center">
-            <img src="./assets/images/example1/dv3_r50_eed.png" id="pred-eed" alt="Model prediction – EED" class="rounded-lg shadow-md max-h-56 object-contain">
-            <figcaption class="mt-1 text-xs text-gray-600" id="pred-eed-caption">DV3+R50</figcaption>
-          </figure>
-
-          <figure class="text-center">
-            <img src="./assets/images/example1/dv3_r50_vor.png" id="pred-vor" alt="Model prediction – Voronoi" class="rounded-lg shadow-md max-h-56 object-contain">
-            <figcaption class="mt-1 text-xs text-gray-600" id="pred-vor-caption">DV3+R50</figcaption>
-          </figure>
-        </div>
-
-        <!-- ── MODEL SWITCHER ──────────────────────────────────── -->
-        <div class="flex justify-center gap-3 mt-6">
-          <button data-model="DV3" class="model-btn px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium shadow active">DV3+R50</button>
-          <button data-model="Mask2SL" class="model-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm font-medium shadow">Mask2SL</button>
-          <button data-model="SetrPup" class="model-btn px-4 py-2 rounded-lg bg-gray-200 text-gray-800 text-sm font-medium shadow">VSetrPup</button>
-        </div>
-
-        <!-- ── SCRIPT ─────────────────────────────────────────── -->
-        <script>
-          // Prediction sources for each model
-          const modelPreds = {
-            DV3: {
-              orig: "./assets/images/example1/dv3_r50_original.png",
-              eed:  "./assets/images/example1/dv3_r50_eed.png",
-              vor:  "./assets/images/example1/dv3_r50_vor.png",
-              label: "DV3+R50"
-            },
-            Mask2SL: {
-              orig: "./assets/images/example1/mask2sl_original.png",
-              eed:  "./assets/images/example1/mask2sl_eed.png",
-              vor:  "./assets/images/example1/mask2sl_vor.png",
-              label: "Mask2SL"
-            },
-            SetrPup: {
-              orig: "./assets/images/example1/setrpup_original.png",
-              eed:  "./assets/images/example1/setrpup_eed.png",
-              vor:  "./assets/images/example1/setrpup_vor.png",
-              label: "SetrPup"
-            }
-          };
-
-          const btns = document.querySelectorAll('.model-btn');
-          const predOrig = document.getElementById('pred-orig');
-          const predEed  = document.getElementById('pred-eed');
-          const predVor  = document.getElementById('pred-vor');
-          const predOrigCap = document.getElementById('pred-orig-caption');
-          const predEedCap  = document.getElementById('pred-eed-caption');
-          const predVorCap  = document.getElementById('pred-vor-caption');
-
-          btns.forEach(btn => {
-            btn.addEventListener('click', () => {
-              // visual feedback
-              btns.forEach(b => b.classList.remove('bg-blue-600', 'text-white', 'active'));
-              btns.forEach(b => b.classList.add('bg-gray-200', 'text-gray-800'));
-              btn.classList.remove('bg-gray-200', 'text-gray-800');
-              btn.classList.add('bg-blue-600', 'text-white');
-
-              const modelKey = btn.dataset.model;
-              const preds = modelPreds[modelKey];
-
-              // swap sources
-              predOrig.src = preds.orig;
-              predEed.src  = preds.eed;
-              predVor.src  = preds.vor;
-
-              // update captions
-              predOrigCap.textContent = preds.label;
-              predEedCap.textContent  = preds.label;
-              predVorCap.textContent  = preds.label;
-            });
-          });
-        </script>
-      </section>
 
       <!-- RESOURCES -->
       <section id="resources" class="space-y-6 px-6 py-8 lg:max-w-6xl lg:mx-auto">
         <h2 class="text-2xl font-semibold">Resources & Links</h2>
         <ul class="list-disc list-inside space-y-2">
-          <li><a href="https://arxiv.org/pdf/2503.12453.pdf" class="text-blue-600 hover:underline">PDF (10.2 MB)</a></li>
-          <li><a href="https://arxiv.org/abs/2503.12453" class="text-blue-600 hover:underline">arXiv abstract &amp; BibTeX</a></li>
-          <li><a href="#" class="text-blue-600 hover:underline">Official implementation (PyTorch) (TBA)</a></li>
+          <li><a href="https://arxiv.org/pdf/2503.10210" class="text-blue-600 hover:underline">PDF (8.9 MB)</a></li>
+          <li><a href="https://arxiv.org/abs/2503.10210" class="text-blue-600 hover:underline">arXiv abstract &amp; BibTeX</a></li>
         </ul>
       </section>
-
-      <!-- FAQ -->
-        <!--
-      <section id="faq" class="space-y-6">
-        <h2 class="text-2xl font-semibold">FAQ</h2>
-        <details class="bg-gray-50 p-4 rounded-xl shadow-sm">
-          <summary class="font-medium cursor-pointer select-none">Why study shape‑bias for segmentation?</summary>
-          <p class="mt-2 leading-relaxed text-sm">
-            Most shape‑bias work focuses on image‑level classifiers. Yet safety‑critical perception stacks (e.g., autonomous driving) rely on dense predictions. Our results reveal that segmentation models often carry a<strong> texture bias</strong> similar to their classification counterparts—highlighting a blind‑spot in current robustness evaluations.
-          </p>
-        </details>
-        <details class="bg-gray-50 p-4 rounded-xl shadow-sm">
-          <summary class="font-medium cursor-pointer select-none">How expensive is cue‑decomposition?</summary>
-          <p class="mt-2 leading-relaxed text-sm">Generating cues is <strong>&lt; 0.5 s</strong> per 512² image on a modern GPU, and the evaluation re‑uses existing datasets. We also provide <em>pre‑computed cues</em> for major benchmarks.</p>
-        </details>
-        <details class="bg-gray-50 p-4 rounded-xl shadow-sm">
-          <summary class="font-medium cursor-pointer select-none">Can I plug this metric into my own model?</summary>
-          <p class="mt-2 leading-relaxed text-sm">Yes—our <code class="text-[0.75rem] bg-gray-100 px-1 rounded">pip install cue‑decomposition</code> package ships a one‑liner <code class="text-[0.75rem] bg-gray-100 px-1 rounded">evaluate_shape_bias(model, dataloader)</code>.</p>
-        </details>
-      </section>
-      -->
 
       <!-- ACKNOWLEDGMENTS -->
       <section id="acks" class="space-y-6 px-6 py-8 lg:max-w-6xl lg:mx-auto">
         <h2 class="text-2xl font-semibold">Acknowledgments</h2>
-        <p>A.M., M.R. and E.H. acknowledge support by the German Federal Ministry of Education and Research within the junior research group project “UnrEAL” (grant no. 01IS22069).</p>
-        <p>T.G. acknowledges support by the European Union and the State NRW within the EFRE/JTF project "Just scan it 3D" (grand no. EFRE-20800529).</p>
+        <p>J.W. and M.R. acknowledge support by the German Federal Ministry of Education and Research within the junior research group project “UnrEAL” (grant no. 01IS22069).</p>
         <div class="mt-4 w-40 flex flex-col items-center">
           <a href="https://acm.uni-wuppertal.de/en/ai/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/images/KeyVisual_Dark.png" alt="ACM AI Lab Logo" loading="lazy" class="w-full h-auto">
@@ -497,11 +193,11 @@
                       bg-gray-100 rounded-lg p-3
                       text-[0.70rem] leading-5 font-mono
                       text-gray-700 select-all">
-@article{Heinert2025ShapeBias,
-  title={Shape Bias & Robustness via Cue Decomposition},
-  author={Heinert, E. and Gottwald, T. and Mütze, A. and Rottmann, M.},
-  journal={arXiv:2503.12453},
-  year={2025}
+@article{wu2025tars,
+title={TARS: Traffic-Aware Radar Scene Flow Estimation},
+author={Wu, Jialong and Braun, Marco and Spata, Dominic and Rottmann, Matthias},
+journal={arXiv preprint arXiv:2503.10210},
+year={2025}
 }
           </pre>
 
@@ -535,14 +231,13 @@
         <h2 class="text-2xl font-semibold">Contact</h2>
         <p class="text-sm">Have questions or want to collaborate? Reach out:</p>
         <ul class="space-y-1 text-sm">
-          <li>Email: <a href="mailto:heinert@uni-wuppertal.de" class="text-blue-600 hover:underline">heinert@uni-wuppertal.de</a></li>
-          <li>GitHub Issues: <a href="#" class="text-blue-600 hover:underline">open a ticket ↗</a></li>
+          <li>Email: <a href="mailto:jialong.wu@uni-wuppertal.de" class="text-blue-600 hover:underline">jialong.wu@uni-wuppertal.de</a></li>
         </ul>
       </section>
 
       <!-- FOOTER -->
       <footer class="pt-12 pb-6 text-center text-xs text-gray-500">
-        © 2025 Shape Bias Project • MIT License • Built using the 
+        © 2025 TARS • MIT License • Built using the 
         <a href="https://github.com/mmistakes/minimal-mistakes" target="_blank" class="text-blue-600 hover:underline">
           Minimal Mistakes layout template
         </a> • Site built by
